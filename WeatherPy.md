@@ -1,4 +1,3 @@
-# WeatherPy
 
 
 ```python
