@@ -915,7 +915,7 @@ city_df.head()
 city_df.plot(x = 'Latitude',y = 'Max Temp',kind ='scatter',title="Latitude Vs Max Temperature",grid = True)
 
 # save the figure 
-plt.savefig("Output_Plots/Max_Temp_vs_Latitude.png")
+plt.savefig("output_plots/Max_Temp_vs_Latitude.png")
 
 # Display the plot 
 plt.show()
@@ -930,7 +930,7 @@ plt.show()
 ## latitude vs Humidity
 city_df.plot(x='Latitude',y='Humidity',kind = 'scatter',title ="Latitude vs Humidity",grid = True)
 # save the figure 
-plt.savefig("Output_Plots/Humidity_vs_Latitude.png")
+plt.savefig("output_plots/Humidity_vs_Latitude.png")
 # Display the plot 
 plt.show()
 ```
@@ -945,7 +945,7 @@ plt.show()
 city_df.plot(x='Latitude',y='Cloudiness',kind = 'scatter',title ="Cloudiness (%) vs. Latitude",grid = True)
 
 # save the figure 
-plt.savefig("Output_Plots/Cloudiness_vs_Latitude.png")
+plt.savefig("output_plots/Cloudiness_vs_Latitude.png")
 
 # Display the plot 
 plt.show()
@@ -961,7 +961,7 @@ plt.show()
 city_df.plot(x='Latitude',y='Wind Speed',kind = 'scatter',title ="Wind Speed (mph) vs. Latitude",grid = True) 
 
 # Save the figure
-plt.savefig("Output_Plots/Wind_Speed_vs_Latitude.png")
+plt.savefig("output_plots/Wind_Speed_vs_Latitude.png")
 
 # Show plot
 plt.show()
