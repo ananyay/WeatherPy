@@ -1,3 +1,9 @@
+# WEATHER PY
+
+## Temperature Trends 
+- The highest temperatures are between the latitudes 20 and 40, the behavior is not symmetric when comparing with between -20 and -40. This is a bit different to the expected result of temperature being high between 0 and 20.
+- For cities, at the same latitude, the temperature seems to be low for cities that have higher percentage of humidity.
+- There seems to be no correlation between either Cloudiness or wind speed and the city temperatures. 
 
 
 ```python
@@ -790,19 +796,7 @@ city_df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
