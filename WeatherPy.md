@@ -15,7 +15,7 @@ import api_keys
 from citipy import citipy
 
 # Output File (CSV)
-output_data_file = "../output_data/cities.csv"
+output_data_file = "output_data/cities.csv"
 
 # Range of latitudes and longitudes
 lat_range = (-90, 90)
@@ -50,7 +50,7 @@ len(cities)
 
 
 
-    638
+    604
 
 
 
@@ -104,714 +104,673 @@ print("Data Retrieval Complete  ")
 
     Beginning Data Retrieval     
     -----------------------------
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=alofi
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=belushya guba
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ushuaia
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=akyab
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hobart
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint-philippe
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=carnarvon
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=izhma
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bubaque
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lebu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=souillac
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=atuona
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rikitea
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=barcelos
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=busselton
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chuy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=poshekhonye
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ripiceni
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=albany
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=talnakh
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vaini
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bonavista
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bundaberg
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nikolskoye
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bonito
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kontagora
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san patricio
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vostok
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tiznit
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chokurdakh
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dhidhdhoo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=puerto gaitan
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=praia
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=provideniya
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cherskiy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cape town
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=barrow
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cidreira
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yantzaza
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint george
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=umm kaddadah
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=flin flon
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mys shmidta
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=klaksvik
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mataura
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=petropavlovsk-kamchatskiy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=banjar
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=neiafu
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nosy varika
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=zambezi
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tiksi
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=punta arenas
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bredasdorp
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=barrow
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=petropavlovsk-kamchatskiy
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=barbar
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=corovode
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port alfred
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ribeira grande
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san juan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=piritiba
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=oum hadjer
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ust-barguzin
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=eirunepe
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cape town
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=talcahuano
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yellowknife
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ushuaia
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=upernavik
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=buraydah
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=glendive
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=torbay
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rikitea
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cayenne
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=suntar
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mataura
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=leningradskiy
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jamestown
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=de aar
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=marrakesh
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=andijon
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=east london
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pisco
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saldanha
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mehamn
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hobart
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=otawara
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=paamiut
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jutogh
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ulaanbaatar
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hilo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=barentsburg
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=iqaluit
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kjollefjord
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=los banos
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=busselton
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mahebourg
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chumikan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tutoia
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kloulklubed
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=havelock
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=karaul
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=zhezkazgan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=fort morgan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=marsaxlokk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=geraldton
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=faanui
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=puerto ayora
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ruidoso
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=carnarvon
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hermanus
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=severo-kurilsk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hithadhoo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pevek
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sao joao da barra
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nizhneyansk
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cidreira
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=new norfolk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lebu
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kapaa
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kaitangata
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=wanning
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tumannyy
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yanam
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pameungpeuk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nouadhibou
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=santa eulalia del rio
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=attawapiskat
+    city not found
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=illoqqortoormiut
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=qaanaaq
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=westport
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=berlevag
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=aklavik
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yar-sale
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chokurdakh
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kodiak
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mutis
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=butaritari
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=oksovskiy
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chuy
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=taolanaro
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vaini
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saskylakh
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nikolskoye
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=brae
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=grindavik
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tautira
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=haibowan
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saleaula
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=castro
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=belyy yar
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ancud
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=teya
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=codrington
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bathsheba
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port hardy
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=diego de almagro
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ixtapa
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=aksu
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=college
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=esperance
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vanavara
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sentyabrskiy
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=enid
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=adre
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tasiilaq
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=clyde river
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bentiu
+    city not found
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bluff
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=walvis bay
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=komsomolskiy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sioux lookout
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=prado
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=takoradi
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sinnamary
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=belushya guba
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint-philippe
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mar del plata
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=airai
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=maniitsoq
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=panguna
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port blair
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=atuona
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=point pedro
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tuktoyaktuk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=narrabri
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=amderma
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hithadhoo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=georgetown
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=upernavik
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mar del plata
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=urumqi
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=karpenision
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kankan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san quintin
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=manado
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=manadhoo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nizhniy kuranakh
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=marzuq
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=victorville
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tarabuco
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=westport
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=avarua
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=poso
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port elizabeth
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint george
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pedernales
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=payson
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=revelstoke
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bengkulu
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hanyang
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sept-iles
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tateyama
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=los angeles
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=namatanai
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=albany
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kruisfontein
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dikson
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=guatape
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=narsaq
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=eyl
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sao filipe
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rio gallegos
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kulhudhuffushi
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=arraial do cabo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mackenzie
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bambanglipuro
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=victoria
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kieta
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=juneau
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kavieng
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hamilton
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=accra
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=puerto colombia
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yulara
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint augustine
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rungata
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kedrovyy
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=palabuhanratu
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint anthony
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=namibe
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=losone
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port shepstone
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=provideniya
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=constitucion
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mo i rana
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=guerrero negro
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=santa vitoria do palmar
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bambous virieux
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=guisa
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pangnirtung
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ponta do sol
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=norman wells
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=waddan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=grand gaube
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=anadyr
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=florianopolis
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=thompson
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=zhangye
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mareeba
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=alofi
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ibb
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ust-kuyga
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=salalah
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lodja
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=asau
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tsihombe
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=krasnokamsk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=emerald
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kahului
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=voh
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=monrovia
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=halalo
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=birin
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vestmanna
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=alto longa
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kargasok
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bacuit
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nanortalik
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=itarema
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=weymouth
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=husavik
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=matagami
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=buala
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nalut
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ust-maya
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=malayal
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=talnakh
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pervomayskoye
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=barlinek
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mys shmidta
     city not found
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=olafsvik
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vanimo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sheremetyevskiy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yar-sale
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=daru
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=terney
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jamestown
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tsihombe
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=faanui
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hamilton
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nara
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=atambua
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hermanus
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=eenhana
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yellowknife
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=new norfolk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lorengau
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=castro
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=novosergiyevka
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kaka
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ye
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nador
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=copacabana
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=asau
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=batangafo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=guiratinga
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=korla
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=gazli
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=butaritari
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=celestun
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tasiilaq
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mastic beach
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ayorou
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hervey bay
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dikson
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hirado
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=leninsk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=honiara
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=east london
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=troy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=geraldton
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=poum
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ajdabiya
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=luderitz
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=white rock
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bredasdorp
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=college
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=attawapiskat
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=barentsburg
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=udachnyy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=posse
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dawson creek
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kimbe
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=avarua
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lagoa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saldanha
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cabo san lucas
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=zaraza
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kirksville
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tautira
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rapid valley
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=svetlyy
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=belmonte
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sirjan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=santa maria
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=okha
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=beringovskiy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=luganville
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=monte azul
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sao joao da barra
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=taolanaro
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=itanhem
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=coahuayana
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=la ronge
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sumbe
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=husavik
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kavieng
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=moundsville
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=umm lajj
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port alfred
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rafraf
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dingle
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kargasok
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pevek
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=erenhot
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kodiak
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=longyearbyen
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=xining
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=puerto ayora
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=alugan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=shimoda
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=samusu
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tuktoyaktuk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=brazzaville
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=khandagayty
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=havoysund
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=verkhnevilyuysk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=zhigansk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ilulissat
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ancud
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tongchuan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=qui nhon
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=krasnoselkup
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=falam
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=fevralsk
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yerbogachen
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=puerto colombia
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tiksi
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sakakah
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=natchitoches
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saleaula
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=marawi
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pueblo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vardo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=esperance
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=paamiut
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ribeira grande
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=grand river south east
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=verkhoyansk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=alotau
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=alice springs
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=victoria
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hasaki
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lusambo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=abu samrah
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tuatapere
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vaitape
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tarata
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sorland
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kavaratti
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=iskateley
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=benemerito de las americas
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=angoche
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=te anau
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=emerald
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pinawa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kahului
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=airai
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=darnah
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=codrington
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=meulaboh
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mahebourg
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=basco
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hilo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=khatanga
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jacareacanga
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=palmer
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lompoc
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=agirish
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=myrtle beach
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=necochea
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=phan rang
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kaitangata
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=thompson
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vagos
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=igrim
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sibu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=omsukchan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hami
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=atherton
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ponta do sol
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pucallpa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chapleau
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=neunkirchen
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=qeshm
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=thinadhoo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=serebryansk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tezu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=orange
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mullaitivu
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port elizabeth
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=burlatskoye
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=espanola
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=portland
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tubruq
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kapaa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=iqaluit
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=riyadh
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=omaruru
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=troitsko-pechorsk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lebyazhye
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=marihatag
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mogadishu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=quelimane
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bethel
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=isugod
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=katsuura
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=fortuna
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=camacupa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kildinstroy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sao borja
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bulgan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hays
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=roald
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chirongui
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tucurui
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=porto belo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sola
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lobva
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sorkjosen
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=flinders
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=king city
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kamsack
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=isangel
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint-pierre
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=buala
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kawalu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=constitucion
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hambantota
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=itaperucu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=broome
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=miedzyrzec podlaski
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=aksarka
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=wasilla
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nizhneyansk
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=severo-kurilsk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sentyabrskiy
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=egvekinot
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=camapua
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=waingapu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mezen
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rocha
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tual
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=skelleftea
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=la rioja
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nome
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=quatre cocos
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=matagami
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=malakal
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=beira
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=camacari
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=la plata
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mahabaleshwar
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chapais
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=palabuhanratu
-    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=seregelyes
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=longyearbyen
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jiuquan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=samarai
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ahuimanu
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=salina
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tarudant
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=maiduguri
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mananara
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=roald
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san borja
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tecoanapa
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint-paul
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jingdezhen
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=terrace
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=batemans bay
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=gigmoto
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=popondetta
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=edd
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san patricio
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=desaguadero
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=qaanaaq
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=seoul
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=arlit
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bethel
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=moranbah
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=viru
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bilma
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=iguape
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port augusta
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=georgetown
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=haizhou
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=samusu
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yagodnoye
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ossora
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chumikan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cockburn town
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hualmay
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=okhotsk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=trinidad
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nemuro
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=farah
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cheuskiny
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=atherton
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=marawi
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=warqla
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=iquitos
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bengkulu
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port hedland
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=acajutla
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pisco
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=firminy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yelizovo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=brekstad
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bacolod
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=serafimovich
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yanam
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=teya
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yuli
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=antofagasta
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sorland
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=srednekolymsk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=inirida
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ucluelet
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=porto santo
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mareeba
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port blair
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sabang
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ostrovnoy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=atlantic beach
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ziniare
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=quincy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cao bang
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rongcheng
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=paita
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=enshi
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=xuddur
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=uwayl
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=buraydah
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bialystok
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=taytayan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port hardy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tilichiki
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bandarbeyla
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=aniche
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vilhena
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=medea
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=laguna
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=alice springs
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mayo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=souillac
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tuatapere
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=doha
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=shieli
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=beyneu
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=banda aceh
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bose
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=great bend
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jiwani
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=moron
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=quesnel
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yeppoon
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mackay
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=edwardsville
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ust-maya
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bang saphan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rudnichnyy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=wadsworth
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ternate
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=poso
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=aginskoye
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=general pico
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vung tau
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=presidencia roque saenz pena
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nguruka
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=aitape
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=aktau
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mount gambier
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=stara synyava
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yaan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=raudeberg
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hasaki
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=alyangula
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=grande-riviere
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rebrikha
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kilinochchi
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=grahamstown
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sterling
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mujiayingzi
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lovozero
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint-felix-de-valois
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=atasu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=amursk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pathein
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=norman wells
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tumannyy
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=honggang
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=wahran
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=oranjestad
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=maragogi
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vagur
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=westpunt
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nuuk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=biak
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=novolvovsk
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=zdvinsk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cayenne
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=purpe
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=strezhevoy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=thunder bay
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=atar
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mamallapuram
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kupang
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dole
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=puerto carreno
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kathmandu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saskylakh
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yenagoa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=puerto leguizamo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=morgan city
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chongqing
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=namibe
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint pete beach
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=west wendover
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kamenskoye
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=portland
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sambava
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tete
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lagoa
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lazaro cardenas
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=satitoa
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bur gabo
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=haines junction
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lyubytino
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pishin
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=marcona
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=amahai
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tabialan
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hihifo
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ekibastuz
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kirakira
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ipaussu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ixtapa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=beloha
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tawau
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pipri
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san cristobal
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kachikau
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=colwyn bay
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=arraial do cabo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=camopi
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dongkan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bagdarin
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sembakung
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bambanglipuro
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=puerto escondido
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=taltal
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=berlevag
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=iracoubo
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=launceston
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=svetlogorsk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=teeli
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=guerrero negro
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nazilli
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sidvokodvo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=fredericton
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cehegin
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pareora
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=digha
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=shelburne
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san carlos de bariloche
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tura
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=katsuura
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=papara
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ternate
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=xining
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yenotayevka
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=goderich
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mulege
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kidal
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nemuro
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cerrito
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=baruun-urt
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cherskiy
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lazarev
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ahipara
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pulandian
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bida
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=karamea
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lamar
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=andenes
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chapais
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=komsomolskiy
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=manggar
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dingle
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=atar
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cap-aux-meules
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=valentin gomez farias
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mvuma
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lewiston
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yuzha
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=thinadhoo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=obo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=los llanos de aridane
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kisaran
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bolungarvik
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lyuban
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=konstantinovka
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dien bien
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hoganas
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=novoorsk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=smidovich
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vaitupu
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kazalinsk
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=brahmapuri
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=proletarskiy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=azul
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lima
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=senneterre
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ughelli
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bolobo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=blairmore
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=novita
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sovetskiy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=atchison
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=biak
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yumen
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=macas
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yambio
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kunming
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port antonio
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=coquimbo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=matay
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=batemans bay
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=shingu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port-gentil
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san quintin
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=oussouye
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=golden
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=knoxville
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rawson
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=waldshut-tiengen
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=curaca
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=wulanhaote
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=springdale
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=stavern
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=shawinigan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=paramonga
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mpongwe
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=caravelas
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chara
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kuandian
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=huazolotitlan
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yarada
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mizur
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pangoa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=garowe
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cheremukhovo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tir pol
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=emden
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=prince george
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=shimoda
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=erenhot
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cabo san lucas
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=maua
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=quang ngai
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=guaratinga
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bandar penggaram
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=parrita
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=areni
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint-pierre
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=isangel
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=voi
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=naze
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hervey bay
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=coihaique
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mayumba
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bourges
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=qaqortoq
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ozernovskiy
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=maba
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=morris
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rudbar
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=acapulco
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mbanza-ngungu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lakatoro
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sulangan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=fort nelson
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lavrentiya
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=shatsk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=narsaq
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cabedelo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=aswan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sakaiminato
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=karratha
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ulladulla
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=road town
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vila velha
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=asosa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=gwanda
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=laguna
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=toliary
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=morro bay
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=plettenberg bay
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mgachi
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kalas
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sataua
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=auki
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tabiauea
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=clyde river
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=galle
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=linqiong
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=camacha
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=uvalde
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=padang
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=oksfjord
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=fernley
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint-francois
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vestmanna
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=salym
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=zhizdra
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yomitan
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=adrar
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ouallam
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=goderich
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yaan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vao
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sechura
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=gotsu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=agadir
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ahipara
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=temaraia
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=stokmarknes
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tepalcatepec
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yertsevo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=avera
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nokaneng
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bilibino
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mehamn
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=zalantun
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=leshukonskoye
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dutse
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pemangkat
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mattawa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san carlos de bariloche
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=windsor
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tieling
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=manyana
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dubbo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=klyuchi
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kemin
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kokorevka
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sehithwa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yamada
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=stolin
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kouroussa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=estevan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=turan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=phangnga
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=quepos
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pithiviers
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=wewak
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yeniseysk
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san andres
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=torbay
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sao filipe
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cagayan de tawi-tawi
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nabire
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=la ronge
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=padang
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dondo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tilichiki
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=te anau
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mabaruma
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yuli
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=orlik
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=luderitz
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chihuahua
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nipawin
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=avera
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=fortuna
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ikole
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cervo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kamphaeng phet
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=qasigiannguit
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tiruttani
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=zamora
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=langham
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=shagonar
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=burica
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=henties bay
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=axim
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chimoio
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=samarai
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=aban
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=manokwari
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pangody
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kodinsk
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=loandjili
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=praia da vitoria
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pangnirtung
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jinchang
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=huarmey
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jardim
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jabiru
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=amapa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint-louis
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=wonthaggi
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cavalcante
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=novodolinskiy
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=resistencia
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dunedin
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=falealupo
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=talcahuano
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=zavyalovo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=birjand
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=zhitikara
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=longlac
-    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ossora
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=acarau
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bay roberts
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=haikou
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pundaguitan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bartica
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=liverpool
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yelets
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=koutsouras
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tigil
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=itarema
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=moindou
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yefimovskiy
-    city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=springdale
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=barra patuca
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=oskarshamn
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dori
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=belen
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=santa fe
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=prince rupert
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ketchikan
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=fare
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tooele
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=virginia beach
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=popondetta
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=shellbrook
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=iquitos
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=batagay
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=margate
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=palmer
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=smoky lake
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=eureka
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=baishishan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=damavand
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=puerto leguizamo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=barra do bugres
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=comodoro rivadavia
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=coahuayana
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kalevala
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=la palma
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port hawkesbury
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=briancon
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nanga eboko
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=russell
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=deer lake
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san cristobal
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=fort myers beach
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=miri
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=oga
     http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=waipawa
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tipacoque
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dandong
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=freeport
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=utkivka
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=utiroa
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san carlos
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mahibadhoo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tanjong tokong
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tazmalt
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=selikhino
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nadym
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=chakia
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bathsheba
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=aracati
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jining
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=koshurnikovo
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=caxito
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yumen
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=wanlaweyn
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bambous virieux
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=naolinco
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=broken hill
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=irgakly
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=aklavik
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san felipe
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nieuw amsterdam
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ayia marina
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ajdabiya
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=balkhash
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=baza
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=gangtok
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sinop
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=malartic
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=guiren
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=acari
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pringsewu
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bauchi
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nara
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=santa fe
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=orasu nou
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dzhebariki-khaya
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=singaparna
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=manicore
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hofn
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sisimiut
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=saint-joseph
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ruatoria
     city not found
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=praya
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mitu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cyangugu
-    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kisangani
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=show low
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ust-tsilma
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vao
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=gatton
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kibala
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mwanza
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mackay
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=menongue
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=klaksvik
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kenai
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dunedin
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=puerto narino
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=waingapu
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bolshegrivskoye
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=merauke
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=touros
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=karasjok
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=gladstone
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=predivinsk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ambanja
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=batagay-alyta
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lompoc
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=belaya gora
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ulaangom
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kamenskoye
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=shar
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=faya
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=shiyan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=boende
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pembroke
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mastic beach
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=egvekinot
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=naftah
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rio grande
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sao gabriel da cachoeira
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=effingham
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=fort saint james
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kharan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=rocha
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=paddaya
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=luau
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=haines junction
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vabalninkas
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=killybegs
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tinaquillo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=louisbourg
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kerteh
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dinsor
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nelson bay
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=praia
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nantucket
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=muzhi
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pemba
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=wanaka
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tukrah
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=maracas
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tucuman
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ushtobe
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bud
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sosua
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jalu
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=zaoyang
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=esso
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=khatanga
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vostok
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=buin
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=luwuk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=karratha
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ilulissat
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=novikovo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=shache
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=basco
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=harnosand
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=beloha
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=itoman
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=varadero
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=paragominas
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=vallenar
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=muros
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=athabasca
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=port-gentil
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sinkat
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=xichang
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kuusamo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=necochea
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nakhodka
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tabou
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=meulaboh
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sarwar
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=krasnoselkup
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=gouyave
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=santa isabel
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=jaynagar
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=siocon
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=emba
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=baijiantan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=micheweni
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=fort frances
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=hay river
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tiznit
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bubaque
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pinega
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=beatrice
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lashma
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=poum
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=bosanski brod
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=wellington
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tevaitoa
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kegayli
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=betafo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=mount gambier
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=dauphin
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=huangchuan
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=tadine
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=nome
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=yen bai
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=cartagena del chaira
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=alamogordo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=pyaozerskiy
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=impfondo
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=san ramon de la nueva oran
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=verkhnya syrovatka
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kuching
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=porangatu
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=niquelandia
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kodinsk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=krasnovishersk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=phan rang
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lucca
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sao raimundo das mangabeiras
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=gunjur
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=moss vale
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ozgon
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=lensk
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kamenka
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=kimbe
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=visby
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=karauzyak
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=toliary
+    city not found
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=sampit
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=ponta delgada
+    http://api.openweathermap.org/data/2.5/weather?units=Imperial&APPID=8e7985f09aa3bf830ab2d84bfc3dd5dc&q=terre haute
     Data Retrieval Complete  
     
 
@@ -859,48 +818,48 @@ city_df.head()
   <tbody>
     <tr>
       <th>0</th>
-      <td>alofi</td>
-      <td>76</td>
-      <td>94</td>
-      <td>-19.06</td>
-      <td>73.40</td>
-      <td>9.17</td>
+      <td>nosy varika</td>
+      <td>36</td>
+      <td>100</td>
+      <td>-20.58</td>
+      <td>65.27</td>
+      <td>2.95</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>ushuaia</td>
-      <td>75</td>
-      <td>80</td>
-      <td>-54.81</td>
-      <td>39.20</td>
-      <td>4.70</td>
+      <td>zambezi</td>
+      <td>0</td>
+      <td>63</td>
+      <td>-13.55</td>
+      <td>57.44</td>
+      <td>5.08</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>hobart</td>
-      <td>75</td>
-      <td>61</td>
-      <td>-42.88</td>
-      <td>48.20</td>
-      <td>13.87</td>
+      <td>tiksi</td>
+      <td>0</td>
+      <td>99</td>
+      <td>71.64</td>
+      <td>46.82</td>
+      <td>3.06</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>saint-philippe</td>
-      <td>90</td>
-      <td>47</td>
-      <td>45.36</td>
-      <td>82.40</td>
-      <td>5.82</td>
+      <td>punta arenas</td>
+      <td>75</td>
+      <td>86</td>
+      <td>-53.16</td>
+      <td>39.20</td>
+      <td>8.05</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>carnarvon</td>
-      <td>0</td>
-      <td>79</td>
-      <td>-30.97</td>
-      <td>36.92</td>
-      <td>13.69</td>
+      <td>bredasdorp</td>
+      <td>76</td>
+      <td>81</td>
+      <td>-34.53</td>
+      <td>48.20</td>
+      <td>12.75</td>
     </tr>
   </tbody>
 </table>
