@@ -937,7 +937,7 @@ plt.show()
 ```
 
 
-![png](output_7_0.png)
+![png](Output_Plots/Humidity_vs_Latitude.png)
 
 
 
@@ -953,7 +953,7 @@ plt.show()
 ```
 
 
-![png](output_8_0.png)
+![png](Output_Plots/Cloudiness_vs_Latitude.png)
 
 
 
@@ -969,7 +969,7 @@ plt.show()
 ```
 
 
-![png](output_9_0.png)
+![png](Output_Plots/Wind_Speed_vs_Latitude.png)
 
 
 
